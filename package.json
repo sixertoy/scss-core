@@ -1,0 +1,31 @@
+{
+  "name": "core-css",
+  "version": "0.2.0",
+  "description": "SCSS Core Files",
+  "main": "./index.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sixertoy/core-scss.git"
+  },
+  "keywords": [
+    "CSS",
+    "SCSS",
+    "SASS"
+  ],
+  "author": "Matthieu Lassalvy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sixertoy/core-scss/issues"
+  },
+  "homepage": "https://github.com/sixertoy/core-scss#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "prettier": "1.13.5",
+    "prettier-stylelint": "0.4.2",
+    "pretty-quick": "1.6.0",
+    "stylelint-config-standard": "18.2.0"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/node-sass -r src/styles.scss index.css --output-style compressed && cp ./index.css ./index.scss"
+  }
+}
