@@ -90,7 +90,7 @@ pre {
   float: right;
 }
 
-.absolute {
+.is-overlay {
   top: 0;
   left: 0;
   right: 0;
@@ -98,12 +98,8 @@ pre {
   position: absolute;
 }
 
-.relative {
+.is-relative {
   position: relative;
-}
-
-.no-border {
-  border: 0 !important;
 }
 
 .no-margin {
@@ -114,7 +110,8 @@ pre {
   padding: 0 !important;
 }
 
-.no-scroll {
+.is-clipped,
+.no-overflow {
   overflow: hidden !important;
 }
 
@@ -132,12 +129,14 @@ pre {
   overflow-y: scroll !important;
 }
 
-.hidden {
+.hidden,
+.is-invisible {
   display: none;
   visibility: hidden;
 }
 
-.visible {
+.visible,
+.is-visible {
   display: inherit;
   visibility: inherit;
 }
@@ -153,14 +152,17 @@ pre {
  TEXT Alignments
 
 -------------------------------------------- */
-.align-left {
+.align-left,
+.has-text-left-aligned {
   text-align: left;
 }
 
-.align-right {
+.align-right,
+.has-text-right-aligned {
   text-align: right;
 }
 
-.align-center {
+.align-center,
+.has-text-centered {
   text-align: center;
 }
