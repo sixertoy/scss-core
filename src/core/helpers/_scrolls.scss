@@ -1,0 +1,13 @@
+.is-clipped {
+  overflow: hidden !important;
+}
+
+.scroll-x {
+  overflow-y: hidden !important;
+  overflow-x: scroll !important;
+}
+
+.scroll-y {
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}

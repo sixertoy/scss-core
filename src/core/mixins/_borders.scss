@@ -1,0 +1,43 @@
+$style: solid;
+$intSizes: (0, 1, 2, 3, 4, 7, 10, 12, 24);
+
+@each $intSize in $intSizes {
+  // convert value to SASS variables with unit
+  $pixelValue: number-to-pixel($intSize);
+
+  @each $side in $sides {
+    @if $side == 'all' {
+      .b-#{$intSize} {
+        @include rem(border-width, $pixelValue);
+
+        border-style: $style;
+      }
+
+      @else if $side == 'topbottom' {
+        .by-#{$intSize} {
+          @include rem(border-top-width, $pixelValue);
+          @include rem(border-bottom-width, $pixelValue);
+
+          border-style: $style;
+        }
+      }
+
+      @else if $side == 'leftright' {
+        .bx-#{$intSize} {
+          @include rem(border-left-width, $pixelValue);
+          @include rem(border-right-width, $pixelValue);
+
+          border-style: $style;
+        }
+      }
+
+      @else {
+        .b#{str-slice($side, 0, 1)}-#{$intSize} {
+          @include rem(border-#{$side}-width, $pixelValue);
+
+          border-style: $style;
+        }
+      }
+    }
+  }
+}
