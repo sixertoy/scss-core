@@ -1,7 +1,7 @@
 {
   "name": "scss-core",
   "version": "0.3.1",
-  "description": "SCSS Core Files",
+  "description": "SASS Core Files",
   "main": "./index.css",
   "repository": {
     "type": "git",

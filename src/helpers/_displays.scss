@@ -1,9 +1,13 @@
-.is-absolute {
-  position: absolute;
+.is-fixed {
+  position: fixed;
 }
 
 .is-relative {
   position: relative;
+}
+
+.is-absolute {
+  position: absolute;
 }
 
 .is-overlay {
@@ -15,12 +19,16 @@
   bottom: 0;
 }
 
+.is-flex {
+  display: flex;
+}
+
 .is-block {
   display: block;
 }
 
-.is-flex {
-  display: flex;
+.is-inline {
+  display: inline;
 }
 
 .is-inline-block {
