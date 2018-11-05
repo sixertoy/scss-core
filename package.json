@@ -32,6 +32,6 @@
   },
   "scripts": {
     "postinstall": "yarn build",
-    "build": "./node_modules/.bin/node-sass -r src/index.scss ./index.css --output-style compressed"
+    "build": "./node_modules/.bin/node-sass -r lib/styles.scss ./index.css --output-style compressed"
   }
 }
