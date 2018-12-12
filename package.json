@@ -1,11 +1,10 @@
 {
-  "name": "scss-core",
+  "name": "smart-scss-core",
   "version": "0.3.3",
-  "description": "SASS Core Files",
-  "main": "./index.css",
+  "description": "Smart Core CSS/SASS Files",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sixertoy/scss-core.git"
+    "url": "git+https://github.com/sixertoy/smart-core-scss.git"
   },
   "keywords": [
     "CSS",
@@ -15,9 +14,9 @@
   "author": "Matthieu Lassalvy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sixertoy/scss-core/issues"
+    "url": "https://github.com/sixertoy/smart-core-scss/issues"
   },
-  "homepage": "https://github.com/sixertoy/scss-core#readme",
+  "homepage": "https://github.com/sixertoy/smart-core-scss#readme",
   "dependencies": {
     "node-sass": "4.9.4",
     "prettier": "^1.14.0",
@@ -32,6 +31,6 @@
   },
   "scripts": {
     "postinstall": "yarn build",
-    "build": "./node_modules/.bin/node-sass -r src/index.scss ./index.css --output-style compressed"
+    "build": "./node_modules/.bin/node-sass -r lib/styles.scss ./styles.css --output-style compressed"
   }
 }
