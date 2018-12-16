@@ -1,9 +1,27 @@
-$intSizes: (0, 2, 3, 4, 6, 7, 8, 10, 12, 15, 16, 20, 24, 25, 30, 32, 40);
+$borderRadiusSizes: (
+  0,
+  2,
+  3,
+  4,
+  6,
+  7,
+  8,
+  10,
+  12,
+  15,
+  16,
+  20,
+  24,
+  25,
+  30,
+  32,
+  40
+);
 
-@each $intSize in $intSizes {
-  $pixelValue: number-to-pixel($intSize);
+@each $size in $borderRadiusSizes {
+  $pixelValue: number-to-pixel($size);
 
-  .br#{$intSize} {
-    border-radius: $pixelValue;
+  .br#{$size} {
+    border-radius: rem($pixelValue);
   }
 }

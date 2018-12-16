@@ -1,16 +1,20 @@
 @mixin height($pixelSize) {
-  height: $pixelSize;
-  min-height: $pixelSize;
-  max-height: $pixelSize;
+  height: rem($pixelSize);
+  min-height: rem($pixelSize);
+  max-height: rem($pixelSize);
 }
 
 @mixin width($pixelSize) {
-  width: $pixelSize;
-  min-width: $pixelSize;
-  max-width: $pixelSize;
+  width: rem($pixelSize);
+  min-width: rem($pixelSize);
+  max-width: rem($pixelSize);
 }
 
-@mixin size($pixelSize) {
+@mixin withSize($width, $height) {
   @include width($pixelSize);
   @include height($pixelSize);
+}
+
+@mixin squareSize($pixelSize) {
+  @include withSize($pixelSize, $pixelSize);
 }
