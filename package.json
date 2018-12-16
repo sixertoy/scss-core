@@ -31,7 +31,8 @@
     "stylelint-scss": "3.3.2"
   },
   "scripts": {
+    "build": "./node_modules/.bin/node-sass -r lib/styles.scss ./styles.css --output-style compressed",
     "postinstall": "yarn build",
-    "build": "./node_modules/.bin/node-sass -r lib/styles.scss ./styles.css --output-style compressed"
+    "prepare": "yarn build"
   }
 }
