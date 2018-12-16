@@ -1,6 +1,7 @@
 {
-  "name": "smart-scss-core",
+  "name": "@smart-core/scss",
   "version": "0.3.3",
+  "main": "./styles.css",
   "description": "Smart Core CSS/SASS Files",
   "repository": {
     "type": "git",

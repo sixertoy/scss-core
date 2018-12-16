@@ -1,16 +1,8 @@
 * {
-  box-sizing: border-box;
-}
-
-hr,
-input,
-button,
-textarea,
-[role='reset'],
-[role='submit'],
-[role='button'] {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
 }
 
 html,
@@ -30,6 +22,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+hr,
+input,
+button,
+textarea,
+[role='reset'],
+[role='submit'],
+[role='button'] {
+  margin: 0;
+  padding: 0;
+}
+
 ul,
 ol,
 li {
@@ -39,6 +42,11 @@ li {
 ol + ol,
 li + li {
   margin-top: 12px;
+}
+
+a,
+button {
+  cursor: pointer;
 }
 
 button,
@@ -55,6 +63,14 @@ button,
   text-decoration: none;
   background: transparent;
   text-overflow: ellipsis;
+}
+
+a:not(.is-underline),
+a:link:not(.is-underline),
+a:hover:not(.is-underline),
+a:active:not(.is-underline),
+a:visited:not(.is-underline) {
+  text-decoration: none;
 }
 
 fieldset {
