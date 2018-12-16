@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/sixertoy/smart-core-scss/issues"
   },
+  "engines": {
+    "node": ">=9.10.3"
+  },
   "homepage": "https://github.com/sixertoy/smart-core-scss#readme",
   "dependencies": {
     "node-sass": "4.9.4",
@@ -32,7 +35,7 @@
   },
   "scripts": {
     "build": "./.scripts/build.sh",
-    "dev": "node-sass --recursive --output-style=compressed --watch $INPUT_FILE $OUTPUT_FILE ",
+    "dev": "./.scripts/watch.sh",
     "postinstall": "yarn build"
   }
 }

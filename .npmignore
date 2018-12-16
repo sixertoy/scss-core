@@ -6,4 +6,6 @@
 .yarnrc.json
 .package-lock.json
 .yarn.lock
+
+styles.css
 node_modules
